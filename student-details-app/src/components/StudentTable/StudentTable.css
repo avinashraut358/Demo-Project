@@ -1,0 +1,80 @@
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+  background: var(--input-bg);
+  box-shadow: 0 4px 15px var(--shadow);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+table thead {
+  background-color: var(--primary-color);
+  color: var(--input-bg);
+}
+
+table th,
+table td {
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid var(--input-border);
+}
+
+table th {
+  font-weight: 600;
+}
+
+table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: background-color 0.2s ease;
+  margin: 10px;
+}
+
+.edit-btn {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+}
+
+.edit-btn:hover {
+  background-color: #ffbf3b;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: var(--input-bg);
+}
+
+.delete-btn:hover {
+  background-color: #d32f2f;
+}
+
+table tbody tr td {
+  text-align: center;
+  color: #777;
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  table th,
+  table td {
+    padding: 0.75rem;
+  }
+
+  .form-buttons {
+    flex-direction: column;
+  }
+}
